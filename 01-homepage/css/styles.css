@@ -138,7 +138,11 @@ b.light-color{ color: #444; }
 
 .color-white{ color: #fff; }
 
-.display-table{ display: table; height: 100%; width: 100%; }
+.display-table {	
+	display: table; 
+	height: 100%; 
+	width: 100%; 
+}
 
 .display-table-cell{ display: table-cell; vertical-align: middle; }
 
@@ -247,8 +251,25 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 4. SLIDER
 --------------------------------- */
 
-.main-slider{ height: 100vh; position: relative; z-index: 1; 
-	background-image: url(../../images/slider-1-1600x900.jpg); background-size: cover; color: #fff; } 
+.main-slider {
+	height: 100vh;
+	position: relative; 
+	z-index: 1; 
+	background-image: url(../../images/fundo.jpeg);
+	background-size: cover;
+	color: #fff;	
+}
+
+@media (max-width: 767px) {
+	.main-slider {
+		height: 100vh;
+		position: relative; 
+		z-index: 1; 
+		background-image: url(../../images/fundo2.jpeg);
+		background-size: cover;
+		color: #fff;
+	}
+}
 
 .main-slider:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
