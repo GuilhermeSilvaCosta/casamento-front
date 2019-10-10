@@ -255,9 +255,16 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	height: 100vh;
 	position: relative; 
 	z-index: 1; 
-	background-image: url(../../images/fundo.jpeg);
+	background-image: url(../../images/fundo3.jpg);
 	background-size: cover;
 	color: #fff;	
+	background-position-y: -180px;
+}
+
+@media (max-width: 1480px) {
+	.main-slider {
+		background-position-y: 0px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -265,9 +272,11 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 		height: 100vh;
 		position: relative; 
 		z-index: 1; 
-		background-image: url(../../images/fundo2.jpeg);
+		background-image: url(../../images/fundo3.jpg);
 		background-size: cover;
 		color: #fff;
+		background-position-x: -60px;
+		background-position-y: 0px;
 	}
 }
 
